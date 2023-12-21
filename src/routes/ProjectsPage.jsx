@@ -16,9 +16,11 @@ const ProjectsPage = () => {
                     <h2 className='text-2xl'>Lex Ed </h2> <IoIosArrowForward className={!lexEd ? `transition-all duration-200` : `transition-all duration-200 rotate-90`} />
                 </div>
                 <div className={!lexEd ? `hidden transition-all duration-100 ease-linear` : `transition-all duration-100 ease-linear`}>
-                    <a href="https://www.github.com/CChenalds17/LexEd" rel="noreferrer" target="_blank">
-                        <img className="my-4 hover:scale-[102%] transition-all" src="/lexed/lexed-logo.png" alt="Lex Ed" />
-                    </a>
+                    <div className="w-[200px]">
+                        <a href="https://www.github.com/CChenalds17/LexEd" rel="noreferrer" target="_blank">
+                            <img className="my-4 hover:scale-[102%] transition-all" src="/lexed/lexed-logo.png" alt="Lex Ed" />
+                        </a>
+                    </div>
                     <h3 className='text-xl'>Grammatical Error Correction</h3>
                     <img className="my-4" src="/lexed/lexed-demo1.gif" alt="Lex Ed Demo 1" />
                     <h3 className='text-xl'>Proofreading Practice</h3>
@@ -30,9 +32,11 @@ const ProjectsPage = () => {
                     <h2 className='text-2xl'>Practic.io </h2> <IoIosArrowForward className={!practicio ? `transition-all duration-200` : `transition-all duration-200 rotate-90`} />
                 </div>
                 <div className={!practicio ? `hidden transition-all duration-100 ease-linear` : `transition-all duration-100 ease-linear`}>
-                    <a href="https://www.github.com/CChenalds17/practicio" rel="noreferrer" target="_blank">
-                        <img className="my-4 hover:scale-[102%] transition-all" src="/practicio/practicio-logo.png" alt="Practic.io" width={240} height={100} />
-                    </a>
+                    <div className="w-[200px]">
+                        <a href="https://www.github.com/CChenalds17/practicio" rel="noreferrer" target="_blank">
+                            <img className="my-4 hover:scale-[102%] transition-all" src="/practicio/practicio-logo.png" alt="Practic.io" width={240} height={100} />
+                        </a>
+                    </div>
                     <h3 className='text-xl'>Practice Journaling</h3>
                     <img className="my-4" src="/practicio/practicio-demo1.png" alt="Practic.io Demo 1" />
                     <h3 className='text-xl'>Practice Tools</h3>
