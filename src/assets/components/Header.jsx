@@ -18,7 +18,7 @@ const Header = () => {
                 {/* logo here */}
                 <div className='flex text-3xl cursor-pointer items-center gap-2'>
                     <span className='font-semibold hover:opacity-65 hover:scale-105 transition-all duration-300'>
-                        <Link to={`/`}>
+                        <Link to={`/`} onClick={() => setIsOpen(false)}>
                             Charlie Chen
                         </Link>
                     </span>
@@ -37,7 +37,7 @@ const Header = () => {
                     {
                         Links.map(link => (
                         <li key={link.name} className='font-semibold my-7 md:my-0 md:ml-8 hover:opacity-65 hover:scale-110 transition-all duration-300'>
-                            <Link to={link.link}>{link.name}</Link>
+                            <Link to={link.link} onClick={() => setIsOpen(false)}>{link.name}</Link>
                         </li>))
                     }
                 </ul>
