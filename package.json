@@ -2,7 +2,7 @@
   "name": "homepage",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://www.github.com/CChenalds17/cchenalds17.github.io",
+  "homepage": "https://www.cchenalds17.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
