@@ -5,6 +5,7 @@ const ProjectsPage = () => {
     
     const [lexEd, setLexEd] = useState(false);
     const [practicio, setPracticio] = useState(false);
+    const [mask, setMask] = useState(false);
 
     return (
         <div className='my-6 xl:px-72 px-10'>
@@ -45,6 +46,14 @@ const ProjectsPage = () => {
                     <img className="my-4" src="/practicio/practicio-demo3.png" alt="Practic.io Demo 2" />
                 </div>
             </div>
+            <div className="my-6">
+                <div onClick={() => setMask(!mask)} className='flex items-center text-2xl shadow-md px-4 py-4 outline outline-1 rounded-sm hover:cursor-pointer hover:shadow-xl hover:opacity-75 hover:scale-[101%] transition-all'>
+                        <h2 className='text-2xl'>Mask Detector</h2> <IoIosArrowForward className={!mask ? `transition-all duration-200` : `transition-all duration-200 rotate-90`} />
+                    </div>
+                    <div className={!mask ? `hidden transition-all duration-100 ease-linear` : `transition-all duration-100 ease-linear`}>
+                        <iframe className='my-10' width="560" height="315" src="https://www.youtube.com/embed/iEKMzGevGJw?si=EzGedQS10nRDjWbo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    </div>
+                </div>
             <h2 className='text-xl pl-2'>More to come...</h2>
 
         </div>

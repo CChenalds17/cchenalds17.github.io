@@ -22,7 +22,7 @@ const HomePage = () => {
                         <FaGithub className='mr-2 text-slate-800' /> <p>Github</p>
                     </div>
                 </a>
-                <a href='CharlieChen.pdf' rel="noreferrer" target="_blank">
+                <a href='Charlie_Chen_Resume.pdf' rel="noreferrer" target="_blank">
                     <div className='text-base flex items-center hover:opacity-65 hover:scale-105 transition-all duration-300'>
                         <IoDocumentTextSharp className='mr-2 text-cyan-700' /> <p>Resume</p>
                     </div>
@@ -37,9 +37,9 @@ const HomePage = () => {
             <div className='px-4 py-4 xl:col-span-3'>
                 <h2 className='text-3xl font-semibold mb-4'>About Me</h2>
                 <p>
-                Hi! My name is Charlie Chen, and I&apos;m currently a first-year at Harvard concentrating in computer science. 
+                Hi! My name is Charlie Chen, and I&apos;m currently a sophomore at Harvard concentrating in computer science. 
                 <br /><br />
-                I am a SWE on Tech for Social Good, Education/Politics Chair of our Chinese Student Association, and a trumpet player in the Harvard-Radcliffe Orchestra.
+                I am a SWE on Tech for Social Good, Education/Politics Chair of our Chinese Students Association, and a trumpet player in the Harvard-Radcliffe Orchestra.
                 I grew up in the suburbs of Philadelphia and went to high school in center city (Go Birds!). 
                 I started playing piano and trumpet from a young age, and I began learning how to code over quarantine. 
                 I love cooking all kinds of food (I have a soft spot for tomato egg stir-fry), enjoy making dumb jokes, and can solve a Rubik&apos;s cube in under 20 seconds.
