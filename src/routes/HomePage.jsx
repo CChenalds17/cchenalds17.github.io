@@ -8,7 +8,7 @@ const HomePage = () => {
             <div className='px-4 py-4 xl:col-span-1 shadow-md rounded-lg'>
                 <img src={"headshot.jpeg"} alt="Charlie Chen" width={"124"} height={"124"} className='rounded-full outline outline-1 outline-gray-100 outline-offset-4 shadow-xl' />
                 <h4 className='font-bold text-xl mt-4 mb-2'>Charlie Chen</h4>
-                <p className='text-base mb-4'>charliechen1742 at gmail.com</p>
+                <p className='text-base mb-4'>charliechen at college.harvard.edu</p>
                 <div className='text-base flex items-center mb-3'>
                     <FaMapPin className='mr-2 text-red-800' /> <p>Philadelphia, PA</p>
                 </div>
