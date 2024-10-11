@@ -22,7 +22,7 @@ const HomePage = () => {
                         <FaGithub className='mr-2 text-slate-800' /> <p>Github</p>
                     </div>
                 </a>
-                <a href='Charlie Chen Resume.pdf' rel="noreferrer" target="_blank">
+                <a href='Charlie Chen SWE Resume.pdf' rel="noreferrer" target="_blank">
                     <div className='text-base flex items-center hover:opacity-65 hover:scale-105 transition-all duration-300'>
                         <IoDocumentTextSharp className='mr-2 text-cyan-700' /> <p>Resume</p>
                     </div>
