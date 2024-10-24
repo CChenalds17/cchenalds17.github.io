@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 const ProjectsPage = () => {
     
+    const [matanataki, setMatanataki] = useState(false);
     const [lexEd, setLexEd] = useState(false);
     const [practicio, setPracticio] = useState(false);
     const [mask, setMask] = useState(false);
@@ -12,6 +13,19 @@ const ProjectsPage = () => {
 
             <h1 className='text-3xl font-semibold'>Projects</h1>
 
+            <div className='my-6'>
+                <div onClick={() => setMatanataki(!matanataki)} className='flex items-center text-2xl shadow-md px-4 py-4 outline outline-1 rounded-sm hover:cursor-pointer hover:shadow-xl hover:opacity-75 hover:scale-[101%] transition-all'>
+                    <h2 className='text-2xl'>Matanataki Impact Reporting Platform</h2> <IoIosArrowForward className={!matanataki ? `transition-all duration-200` : `transition-all duration-200 rotate-90`} />
+                </div>
+                <div className={!matanataki ? `hidden transition-all duration-100 ease-linear` : `transition-all duration-100 ease-linear`}>
+                    <h3 className='text-xl mt-4'>User Creation and Authentication</h3>
+                    <img className="my-4" src="/matanataki/matanataki-home.jpeg" alt="Matanataki Homepage" />
+                    <img className="my-4" src="/matanataki/matanataki-onboarding.jpeg" alt="Matanataki Onboarding Form" />
+                    <h3 className='text-xl'>Individual and Aggregate KPI Tracking</h3>
+                    <img className="my-4" src="/matanataki/matanataki-individual.jpeg" alt="Matanataki Individual KPI Metrics" />
+                    <img className="my-4" src="/matanataki/matanataki-aggregate.jpeg" alt="Matanataki Aggregate KPI Metrics" />
+                </div>
+            </div>
             <div className='my-6'>
                 <div onClick={() => setLexEd(!lexEd)} className='flex items-center text-2xl shadow-md px-4 py-4 outline outline-1 rounded-sm hover:cursor-pointer hover:shadow-xl hover:opacity-75 hover:scale-[101%] transition-all'>
                     <h2 className='text-2xl'>Lex Ed </h2> <IoIosArrowForward className={!lexEd ? `transition-all duration-200` : `transition-all duration-200 rotate-90`} />
