@@ -6,7 +6,6 @@ import { HiXMark } from "react-icons/hi2";
 const Header = () => {
     const Links = [
         {name: 'Home', link: '/'},
-        {name: 'Projects', link: '/projects'},
         {name: 'Music', link: '/music'},
     ]
 
