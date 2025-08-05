@@ -1,33 +1,43 @@
+'use client';
+
+import { FadeParallax } from '@/components/motion/fade-parallax';
+
 export default function Education() {
   return (
     <div className="flex-1 relative pl-6 border-l border-muted-foreground/20">
-      <h2 className="text-2xl font-bold mb-8">Education</h2>
+      <FadeParallax direction="up" distance={80} className="text-2xl font-bold mb-8">Education</FadeParallax>
       
       <div className="space-y-8">
         <div className="relative">
-          <div className="absolute -left-[30px] top-[10px] w-3 h-3 rounded-full bg-muted-foreground/80 ring-3 ring-background" />
-          <div className="space-y-2">
+          <FadeParallax direction="up" distance={80} className="space-y-2">
             <h3 className="text-lg font-semibold">Harvard University</h3>
-            <p className="text-muted-foreground">Bachelor of Science in Electrical Engineering</p>
-            <p className="text-sm text-muted-foreground">Expected May 2027</p>
-          </div>
+            <p className="text-muted-foreground font-semibold">Bachelor of Science in Electrical Engineering</p>
+            <p className="text-muted-foreground">GPA: 3.96/4.0</p>
+            <p className="text-sm text-muted-foreground italic">Expected May 2027</p>
+          </FadeParallax>
         </div>
 
         <div className="relative">
-          <div className="absolute -left-[30px] top-[10px] w-3 h-3 rounded-full bg-muted-foreground/80 ring-3 ring-background" />
-          <div className="space-y-3">
-            <h3 className="text-lg font-semibold">Relevant Coursework</h3>
-            <ul className="list-disc list-inside text-muted-foreground space-y-1.5">
-              <li>Circuits and Electronics</li>
-              <li>Signals and Systems</li>
-              <li>Computer Vision</li>
-              <li>Robotics Engineering</li>
-              <li>Data Structures and Algorithms</li>
+          <FadeParallax direction="up" distance={80} className="space-y-2">
+            <h4 className="text-md font-semibold">Currently Enrolled Courses</h4>
+            <FadeParallax direction="up" distance={20} className="list-disc list-inside text-muted-foreground space-y-1.5">
+              <li>Systems and Control</li>
+              <li>Circuits, Devices, and Transduction</li>
+              <li>Computing Hardware</li>
+              <li>Physics Electricity and Magnetism</li>
+            </FadeParallax>
+          </FadeParallax>
+          <br />
+          <FadeParallax direction="up" distance={80} className="space-y-2">
+            <h4 className="text-md font-semibold">Relevant Coursework</h4>
+            <FadeParallax direction="up" distance={20} className="list-disc list-inside text-muted-foreground space-y-1.5">
+              <li>Intro to Electrical Engineering</li>
               <li>Systems Programming</li>
-              <li>Computer Systems Architecture</li>
-              <li>Web Development</li>
-            </ul>
-          </div>
+              <li>Intro to Machine Learning (MIT)</li>
+              <li>Intro to Distributed Computing</li>
+              <li>Data Structures and Algorithms</li>
+            </FadeParallax>
+          </FadeParallax>
         </div>
       </div>
     </div>

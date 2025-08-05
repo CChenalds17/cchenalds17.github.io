@@ -1,17 +1,33 @@
+'use client'
+
+import { TypingEffect } from "@/components/motion/typing-effect"
+import { Fade } from "@/components/motion/fade"
+
 export default function AboutMe() {
   return (
     <div className="flex-1 space-y-6">
-      <h2 className="text-3xl font-bold">About Me</h2>
+      <TypingEffect as="h2" delay={0.5}>About Me</TypingEffect>
+
       <div className="space-y-4 text-muted-foreground text-lg">
-        <p>
-          Hello! I'm Charlie Chen, a passionate software engineer with a focus on building
-          elegant and efficient solutions. I love working with modern web technologies
-          and creating seamless user experiences.
-        </p>
-        <p>
-          When I'm not coding, you can find me exploring new technologies, contributing
-          to open-source projects, or sharing my knowledge with the developer community.
-        </p>
+        <Fade direction="up" staggerChildren={0.2} delay={1}>
+          <p>
+            Hi! I'm Charlie Chen, a junior at Harvard studying Electrical Engineering and Computer Science.
+          </p>
+          <br />
+          <p>
+            I'm currently conducting research at Harvard's Slade Ability Lab, combining cutting-edge machine learning models and accessible hardware
+            to create assistive devices.
+          </p>
+          <br />
+          <p>
+            I'm passionate about developing technologies that not only push the boundaries of innovation
+            but also make a meaningful difference in people's lives.
+          </p>
+          <br />
+          <p>
+            When I'm not in the lab or working on personal projects, I enjoy going on runs, hiking, and cooking.
+          </p>
+        </Fade>
       </div>
     </div>
   )

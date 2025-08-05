@@ -47,10 +47,21 @@ export const projects: Project[] = [
       "/projects/website/dark-mode.png",
       "/projects/website/mobile.png"
     ],
-    tags: ["Web Development", "Next.js", "TypeScript"],
+    tags: ["Web Development", "Next.js", "TypeScript", "UI/UX", "Design", "Animation", "Motion", "Tailwind CSS", "Shadcn UI", "Responsive", "Dark/Light Mode", "Carousel", "Timeline", "Experience Section", "Project Showcase"],
     links: {
       github: "https://github.com/cchenalds17/homepage",
       demo: "/"
     }
+  },
+  {
+    id: "placeholder",
+    title: "Placeholder",
+    shortDescription: "placeholder",
+    description: "Placeholder description",
+    coverImage: "/projects/website/cover.png",
+    images: [
+      "/projects/website/cover.png"
+    ],
+    tags: ["Placeholder"]
   }
 ];
