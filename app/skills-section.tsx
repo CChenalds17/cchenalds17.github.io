@@ -12,7 +12,7 @@ export default function SkillsSection() {
       </FadeParallax>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {skillsData.map((category, categoryIndex) => (
+        {skillsData.map((category) => (
           <FadeParallax 
             key={category.title} 
             direction="up" 

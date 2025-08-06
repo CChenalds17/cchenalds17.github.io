@@ -16,7 +16,7 @@ export default function NotFound() {
         
         <FadeParallax direction="up" distance={60}>
           <p className="text-muted-foreground text-lg mb-8">
-            The page you are looking for doesn't exist or has been moved.
+            The page you are looking for doesn&apos;t exist or has been moved.
           </p>
         </FadeParallax>
         

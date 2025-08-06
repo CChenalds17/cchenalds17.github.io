@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 import { AnimatedBadge } from "@/components/animated-badge";
 import { FadeParallax } from "@/components/motion/fade-parallax";
 import { TypingEffect } from "@/components/motion/typing-effect";
-import { Project, MediaItem } from "@/types/project";
+import { Project } from "@/types/project";
 
 interface ProjectContentProps {
   project: Project;

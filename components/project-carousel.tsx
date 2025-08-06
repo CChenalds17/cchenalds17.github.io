@@ -33,7 +33,7 @@ export default function ProjectCarousel({ projects }: ProjectCarouselProps) {
     stopOnInteraction: true,  // Pause on user interaction
     stopOnMouseEnter: true,   // Pause on mouse hover
     playOnInit: true,         // Start playing immediately
-    rootNode: (emblaRoot: any) => emblaRoot.parentElement, // Required for stopOnMouseEnter
+    rootNode: (emblaRoot: HTMLElement) => emblaRoot.parentElement, // Required for stopOnMouseEnter
   };
   
   const autoplayPlugin = useRef(

@@ -11,21 +11,21 @@ export default function AboutMe() {
       <div className="space-y-4 text-muted-foreground text-lg">
         <Fade direction="up" staggerChildren={0.2} delay={1}>
           <p>
-            Hi! I'm a junior at Harvard studying Electrical Engineering and Computer Science.
+            Hi! I&apos;m a junior at Harvard studying Electrical Engineering and Computer Science.
           </p>
           <br />
           <p>
-            I'm currently conducting research at the Harvard Ability Lab, combining cutting-edge machine learning models and accessible hardware
+            I&apos;m currently conducting research at the Harvard Ability Lab, combining cutting-edge machine learning models and accessible hardware
             to create assistive devices.
           </p>
           <br />
           <p>
-            I'm passionate about developing technologies that not only push the boundaries of innovation
-            but also make a meaningful difference in people's lives.
+            I&apos;m passionate about developing technologies that not only push the boundaries of innovation
+            but also make a meaningful difference in people&apos;s lives.
           </p>
           <br />
           <p>
-            When I'm not in the lab or working on personal projects, I enjoy going on runs, hiking, and cooking.
+            When I&apos;m not in the lab or working on personal projects, I enjoy going on runs, hiking, and cooking.
           </p>
         </Fade>
       </div>
