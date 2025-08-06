@@ -27,7 +27,7 @@ export const projects: Project[] = [
     coverImage: "/projects/vla-robot-arm/cover.jpg",
     videos: [
       {
-        url: "/projects/vla-robot-arm/demo.MOV",
+        url: "/projects/vla-robot-arm/demo.mp4",
         caption: "Task: Point to the glasses"
       }
     ],
