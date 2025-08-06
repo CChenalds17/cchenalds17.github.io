@@ -1,1 +1,1 @@
-This is my homepage 🙂
+This is my homepage built using Next.js and shadcn-ui 🙂
