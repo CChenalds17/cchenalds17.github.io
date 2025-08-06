@@ -69,7 +69,7 @@ export const projects: Project[] = [
     `,
     coverImage: "/projects/mask-detector/cover.png",
     images: [
-      "/projects/mask-detector/demo.gif"
+      "/projects/mask-detector/Demo-min.gif"
     ],
     tags: ["Computer Vision", "Arduino"],
     links: {
