@@ -9,7 +9,7 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function ProjectPage({ params }: { params: { id: string } }) {
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   
   const project = projects.find((p) => p.id === id);
