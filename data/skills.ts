@@ -11,33 +11,30 @@ export type SkillCategory = {
 
 export const skillsData: SkillCategory[] = [
   {
-    title: "Robotics & Hardware",
-    skills: [
-      { name: "Computer Vision" },
-      { name: "Motion Tracking" },
-      { name: "Robotic Control Systems" },
-      { name: "Circuit Design" },
-      { name: "Signal Processing" },
-    ]
-  },
-  {
-    title: "Software & AI",
+    title: "Software",
     skills: [
       { name: "Python" },
-      { name: "C/C++" },
+      { name: "C" },
+      { name: "C++" },
+      { name: "Arduino" },
       { name: "MATLAB" },
+      { name: "Linux" },
+      { name: "Git" },
       { name: "OpenCV" },
+      { name: "PyTorch" },
+      { name: "Fusion360" },
       { name: "React/TypeScript" },
     ]
   },
   {
-    title: "Research Tools",
+    title: "Hardware",
     skills: [
-      { name: "OpenCap" },
-      { name: "Lab Equipment" },
-      { name: "Data Analysis" },
-      { name: "Experimental Design" },
-      { name: "Technical Writing" },
+      { name: "Soldering" },
+      { name: "Op Amps" },
+      { name: "Function Generator" },
+      { name: "Oscilloscope" },
+      { name: "Power Supply" },
+      { name: "Multimeter" },
     ]
-  }
+  },
 ];

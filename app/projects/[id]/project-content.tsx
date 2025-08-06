@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 import { AnimatedBadge } from "@/components/animated-badge";
 import { FadeParallax } from "@/components/motion/fade-parallax";
 import { TypingEffect } from "@/components/motion/typing-effect";
-import { Project } from "@/types/project";
+import { Project, MediaItem } from "@/types/project";
 
 interface ProjectContentProps {
   project: Project;
@@ -87,14 +87,19 @@ export default function ProjectContent({ project }: ProjectContentProps) {
 
         {/* Cover Image */}
         <FadeParallax direction="up" distance={20} end={80} className="-mt-4">
-          <Image
-            src={project.coverImage}
-            alt={project.title}
-            width={1920}
-            height={1080}
-            className="w-full h-auto rounded-sm"
-            priority
-          />
+          <div className="space-y-2">
+            <Image
+              src={typeof project.coverImage === 'string' ? project.coverImage : project.coverImage.url}
+              alt={project.title}
+              width={1920}
+              height={1080}
+              className="w-full h-auto rounded-sm"
+              priority
+            />
+            {typeof project.coverImage !== 'string' && project.coverImage.caption && (
+              <p className="text-sm text-muted-foreground text-center italic">{project.coverImage.caption}</p>
+            )}
+          </div>
         </FadeParallax>
 
         {/* Description */}
@@ -104,32 +109,52 @@ export default function ProjectContent({ project }: ProjectContentProps) {
 
         {/* Additional Images */}
         <div className="space-y-12">
-        {project.images.slice(1).map((image: string, index: number) => (
+        {project.images && project.images.map((image, index: number) => {
+          const imageUrl = typeof image === 'string' ? image : image.url;
+          const imageCaption = typeof image !== 'string' ? image.caption : undefined;
+          
+          return (
             <FadeParallax direction="up" distance={20} end={90} key={index}>
-              <Image
-                src={image}
-                alt={`${project.title} image ${index + 1}`}
-                width={1920}
-                height={1080}
-                className="w-full h-auto rounded-sm"
-              />
+              <div className="space-y-2">
+                <Image
+                  src={imageUrl}
+                  alt={`${project.title} image ${index + 1}`}
+                  width={1920}
+                  height={1080}
+                  className="w-full h-auto rounded-sm"
+                />
+                {imageCaption && (
+                  <p className="text-sm text-muted-foreground text-center italic">{imageCaption}</p>
+                )}
+              </div>
             </FadeParallax>
-          ))}
+          );
+        })}
         </div>
         
         {/* Videos */}
         {project.videos && project.videos.length > 0 && (
           <FadeParallax direction="up" distance={20} end={90} className="space-y-6">
             <h2 className="text-2xl font-semibold">Videos</h2>
-            {project.videos.map((video: string, index: number) => (
-              <div key={index} className="relative aspect-video w-full overflow-hidden rounded-sm">
-                <video
-                  controls
-                  className="w-full h-full"
-                  src={video}
-                />
-              </div>
-            ))}
+            {project.videos.map((video, index: number) => {
+              const videoUrl = typeof video === 'string' ? video : video.url;
+              const videoCaption = typeof video !== 'string' ? video.caption : undefined;
+              
+              return (
+                <div key={index} className="space-y-2">
+                  <div className="relative aspect-video w-full overflow-hidden rounded-sm">
+                    <video
+                      controls
+                      className="w-full h-full"
+                      src={videoUrl}
+                    />
+                  </div>
+                  {videoCaption && (
+                    <p className="text-sm text-muted-foreground text-center italic">{videoCaption}</p>
+                  )}
+                </div>
+              );
+            })}
           </FadeParallax>
         )}
       </div>

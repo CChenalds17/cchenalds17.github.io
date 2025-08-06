@@ -126,7 +126,7 @@ export default function ProjectCarousel({ projects }: ProjectCarouselProps) {
                       <div className="overflow-hidden rounded-lg relative">
                         <div className="relative aspect-video">
                           <Image
-                            src={project.coverImage}
+                            src={typeof project.coverImage === 'string' ? project.coverImage : project.coverImage.url}
                             alt={project.title}
                             fill
                             className="object-cover"
@@ -155,7 +155,7 @@ export default function ProjectCarousel({ projects }: ProjectCarouselProps) {
                     
                     <div className="flex gap-2 mt-3 min-h-[2.5rem] items-center overflow-hidden">
                       <div className="flex items-center overflow-hidden">
-                        {project.tags.slice(0, 3).map((tag) => (
+                        {project.tags.slice(0, 2).map((tag) => (
                           <AnimatedBadge
                             key={tag}
                             size="xs"
@@ -164,12 +164,12 @@ export default function ProjectCarousel({ projects }: ProjectCarouselProps) {
                             {tag}
                           </AnimatedBadge>
                         ))}
-                        {project.tags.length > 3 && (
+                        {project.tags.length > 2 && (
                           <AnimatedBadge
                             size="xs"
                             className="rounded-full px-2"
                           >
-                            +{project.tags.length - 3} more
+                            +{project.tags.length - 2} more
                           </AnimatedBadge>
                         )}
                       </div>

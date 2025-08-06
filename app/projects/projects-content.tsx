@@ -69,7 +69,7 @@ export default function ProjectsContent({ projects }: ProjectsContentProps) {
                     <div className="overflow-hidden rounded-lg relative">
                       <div className="relative aspect-video">
                         <Image
-                          src={project.coverImage}
+                          src={typeof project.coverImage === 'string' ? project.coverImage : project.coverImage.url}
                           alt={project.title}
                           fill
                           className="object-cover transition-all duration-300"

@@ -11,11 +11,11 @@ export default function AboutMe() {
       <div className="space-y-4 text-muted-foreground text-lg">
         <Fade direction="up" staggerChildren={0.2} delay={1}>
           <p>
-            Hi! I'm Charlie Chen, a junior at Harvard studying Electrical Engineering and Computer Science.
+            Hi! I'm a junior at Harvard studying Electrical Engineering and Computer Science.
           </p>
           <br />
           <p>
-            I'm currently conducting research at Harvard's Slade Ability Lab, combining cutting-edge machine learning models and accessible hardware
+            I'm currently conducting research at the Harvard Ability Lab, combining cutting-edge machine learning models and accessible hardware
             to create assistive devices.
           </p>
           <br />
