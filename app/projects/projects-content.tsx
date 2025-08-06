@@ -29,7 +29,7 @@ export default function ProjectsContent({ projects }: ProjectsContentProps) {
           direction="up" 
           distance={40} 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          end={90}
+          end={95}
         >
           {projects.map((project) => (
             <motion.div

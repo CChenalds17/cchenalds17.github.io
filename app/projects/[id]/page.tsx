@@ -2,6 +2,13 @@ import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import ProjectContent from "./project-content";
 
+// This function is required for static site generation with dynamic routes
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id,
+  }));
+}
+
 export default async function ProjectPage({ params }: { params: { id: string } }) {
   const { id } = await params;
   
