@@ -19,7 +19,7 @@ export default function ProjectsContent({ projects }: ProjectsContentProps) {
   return (
     <main className="container mx-auto min-h-screen py-8 space-y-12 max-w-7xl">
       <div className="flex-row space-y-12 items-start">
-        <FadeParallax direction="up" distance={40}>
+        <FadeParallax direction="up" distance={40} end={90}>
           <TypingEffect as="h1">
             Projects
           </TypingEffect>
