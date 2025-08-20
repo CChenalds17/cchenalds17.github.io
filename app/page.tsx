@@ -9,8 +9,8 @@ import { FadeParallax } from "@/components/motion/fade-parallax";
 
 export default function Home() {
   return (
-    <main className="container mx-auto min-h-screen py-12 space-y-24 max-w-7xl mb-4">
-      <div className="flex flex-col md:flex-row gap-20 items-start">
+    <main className="container mx-auto min-h-screen py-12 space-y-24 max-w-7xl mb-4 px-10">
+      <div className="flex flex-col gap-20 items-center md:flex-row">
         <FadeParallax direction="up" distance={40}>
           <ProfileCard />
         </FadeParallax>
@@ -18,14 +18,14 @@ export default function Home() {
           <AboutMe />
         </FadeParallax>
       </div>
-      <FadeParallax direction="up" distance={60} end={75} className="flex flex-col md:flex-row justify-center px-40">
+      <FadeParallax direction="up" distance={60} end={75} className="flex flex-col justify-center gap-20 md:flex-row md:gap-0">
         <Education />
         <Experience />
       </FadeParallax>
       <FadeParallax direction="up" distance={60} end={75}>
         <SkillsSection />
       </FadeParallax>
-      <FadeParallax direction="up" distance={60} end={85}>
+      <FadeParallax direction="up" distance={60} end={85} className="px-4">
         <ProjectCarousel projects={projects} />
       </FadeParallax>
     </main>

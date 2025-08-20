@@ -16,7 +16,7 @@ interface ProjectContentProps {
 
 export default function ProjectContent({ project }: ProjectContentProps) {
   return (
-    <main className="container mx-auto min-h-screen py-12 space-y-6 max-w-4xl mb-8">
+    <main className="container mx-auto min-h-screen py-12 space-y-6 max-w-4xl mb-8 px-10">
       <div className="flex-row space-y-12 items-start">
         {/* Header */}
         <FadeParallax direction="up" distance={40} end={90} className="mb-6">
