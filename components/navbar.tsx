@@ -20,7 +20,7 @@ export function Navbar() {
 
   return (
     <div className="sticky top-0 z-50 w-full backdrop-blur-sm bg-background/60 border-b">
-      <div className="container mx-auto flex h-14 items-center justify-between">
+      <div className="container mx-auto flex h-14 items-center justify-between px-10">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -52,7 +52,7 @@ export function Navbar() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-2 md:gap-6">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
