@@ -18,7 +18,7 @@ export default function Home() {
           <AboutMe />
         </FadeParallax>
       </div>
-      <FadeParallax direction="up" distance={60} end={75} className="flex flex-col justify-center gap-20 md:flex-row md:gap-0">
+      <FadeParallax direction="up" distance={60} end={75} className="flex flex-col justify-center gap-20 md:flex-row md:gap-0 md:px-20 lg:px-40">
         <Education />
         <Experience />
       </FadeParallax>
