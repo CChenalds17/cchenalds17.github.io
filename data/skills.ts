@@ -18,11 +18,11 @@ export const skillsData: SkillCategory[] = [
       { name: "C++" },
       { name: "Arduino" },
       { name: "MATLAB" },
+      { name: "SystemVerilog" },
       { name: "Linux" },
       { name: "Git" },
       { name: "OpenCV" },
       { name: "PyTorch" },
-      { name: "Fusion360" },
       { name: "React/TypeScript" },
     ]
   },
