@@ -11,16 +11,17 @@ export type SkillCategory = {
 
 export const skillsData: SkillCategory[] = [
   {
-    title: "Software",
+    title: "Software & Programming",
     skills: [
-      { name: "Python" },
-      { name: "C" },
-      { name: "C++" },
+      { name: "SystemVerilog" },
+      { name: "Vivado" },
       { name: "Arduino" },
       { name: "MATLAB" },
-      { name: "SystemVerilog" },
-      { name: "Linux" },
+      { name: "LTSpice" },
+      { name: "Python" },
       { name: "Git" },
+      { name: "Linux" },
+
       { name: "OpenCV" },
       { name: "PyTorch" },
       { name: "React/TypeScript" },
@@ -29,12 +30,12 @@ export const skillsData: SkillCategory[] = [
   {
     title: "Hardware",
     skills: [
-      { name: "Soldering" },
-      { name: "Op Amps" },
-      { name: "Function Generator" },
+      { name: "FPGA Programming" },
+      { name: "Analog & Digital Circuit Design" },
+      { name: "Embedded Systems" },
       { name: "Oscilloscope" },
-      { name: "Power Supply" },
-      { name: "Multimeter" },
+      { name: "Function Generator" },
+      { name: "Soldering" },
     ]
   },
 ];

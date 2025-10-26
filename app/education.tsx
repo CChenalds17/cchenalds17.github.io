@@ -22,11 +22,10 @@ export default function Education() {
           <FadeParallax direction="up" distance={80} end={75} className="space-y-2">
             <h4 className="text-md font-semibold">Relevant Coursework</h4>
             <FadeParallax direction="up" distance={20} end={75} className="list-disc list-inside text-muted-foreground space-y-1.5">
+              <li>Computing Hardware</li>
               <li>Circuits, Devices, and Transduction</li>
               <li>Systems and Control</li>
-              <li>Computing Hardware</li>
               <li>Physics Electromagnetism</li>
-              <li>Intro to Electrical Engineering</li>
               <li>Systems Programming</li>
               <li>Intro to Machine Learning (MIT)</li>
               <li>Intro to Distributed Computing</li>
