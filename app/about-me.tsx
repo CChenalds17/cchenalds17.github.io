@@ -15,7 +15,7 @@ export default function AboutMe() {
           </p>
           <br />
           <p>
-            I&apos;m currently conducting research at the Harvard Ability Lab, combining cutting-edge machine learning models and accessible hardware
+            I recently conducted research at the Harvard Ability Lab, where I combined cutting-edge machine learning models and accessible hardware
             to create assistive devices.
           </p>
           <br />

@@ -11,8 +11,8 @@ export default function Experience() {
         <div className="relative">
           <FadeParallax direction="up" distance={80} end={75} className="space-y-2">
             <h3 className="text-lg font-semibold">Undergraduate Researcher</h3>
-            <p className="text-muted-foreground">Harvard Ability Lab (PI: Patrick Slade)</p>
-            <p className="text-sm text-muted-foreground">2025 - Present</p>
+            <p className="text-muted-foreground">Harvard Ability Lab</p>
+            <p className="text-sm text-muted-foreground">2025</p>
             <FadeParallax direction="up" distance={20} end={75} className="list-disc list-inside text-muted-foreground space-y-1.5 mt-2">
               <li>Analyzing vision-language-action model performance on egocentric robotic arms in human-robot interaction tasks</li>
               <li>Engineered human-mounted rig for supernumerary robotic arm by designing custom CAD chest plate & harness</li>
