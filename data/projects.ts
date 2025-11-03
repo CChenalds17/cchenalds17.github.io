@@ -1,11 +1,11 @@
 import { Project } from "@/types/project";
 
-import { alu32 } from "./alu32";
-import { reverbKaraokeMachine } from "./reverb-karaoke-machine";
-import { maskDetector } from "./mask-detector";
-import { vlaRobotArm } from "./vla-robot-arm";
-import { clientServerChatApp } from "./client-server-chat-app";
-import { personalWebsite } from "./personal-website";
+import { alu32 } from "./projects/alu32";
+import { reverbKaraokeMachine } from "./projects/reverb-karaoke-machine";
+import { maskDetector } from "./projects/mask-detector";
+import { vlaRobotArm } from "./projects/vla-robot-arm";
+import { clientServerChatApp } from "./projects/client-server-chat-app";
+import { personalWebsite } from "./projects/personal-website";
 
 export const projects: Project[] = [
   alu32, 
