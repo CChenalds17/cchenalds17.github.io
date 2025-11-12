@@ -35,8 +35,10 @@ export const skillsData: SkillCategory[] = [
       { name: "Analog & Digital Circuit Design" },
       { name: "Embedded Systems" },
       { name: "Oscilloscope" },
+      { name: "Multimeter" },
       { name: "Function Generator" },
       { name: "Soldering" },
+      { name: "Hardware Verification" },
     ]
   },
 ];
