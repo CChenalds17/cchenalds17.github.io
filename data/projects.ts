@@ -8,8 +8,10 @@ import { clientServerChatApp } from "./projects/client-server-chat-app";
 import { personalWebsite } from "./projects/personal-website";
 import { rtiow } from "./projects/rtiow";
 import { mips } from "./projects/mips";
+import { logicDemo } from "./projects/logic-demo";
 
 export const projects: Project[] = [
+  logicDemo,
   mips,
   reverbKaraokeMachine,
   maskDetector,

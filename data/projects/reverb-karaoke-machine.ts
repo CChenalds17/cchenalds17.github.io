@@ -31,5 +31,5 @@ export const reverbKaraokeMachine: Project =
     {url: "/projects/reverb-karaoke-machine/filters.png", caption: "Input filters"},
     {url: "/projects/reverb-karaoke-machine/dac-output.png", caption: "Close-up of the Arduino DAC output."},
   ],
-  tags: ["Audio Processing", "Filters", "Op Amps", "DAC", "Arduino", "Soldering"],
+  tags: ["Analog Signal Conditioning", "Op-Amps", "Filters", "ADC/DAC"],
 }

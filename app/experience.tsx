@@ -14,10 +14,9 @@ export default function Experience() {
             <p className="text-muted-foreground">Harvard Ability Lab</p>
             <p className="text-sm text-muted-foreground">2025</p>
             <FadeParallax direction="up" distance={20} end={75} className="list-disc list-inside text-muted-foreground space-y-1.5 mt-2">
-              <li>Analyzed vision-language-action model performance on egocentric robotic arms in human-robot interaction tasks</li>
-              <li>Engineered human-mounted rig for supernumerary robotic arm by designing custom CAD chest plate & harness</li>
-              <li>Teleoperated arm to build high-fidelity 10K+ frame dataset for VLA fine-tuning & quantified movement using OpenCap</li>
-              <li>Designed protocol with varying interaction complexity, human movement, etc. on ADL tasks to benchmark performance</li>
+              <li>Enabled human-in-the-loop experiments by prototyping stable wearable mounting system for supernumerary arm</li>
+              <li>Designed task protocols varying complexity & motion to evaluate system behavior under realistic human movement</li>
+              <li>Collected 10,000+ frames of egocentric video & actuator states to support VLA training & control analysis</li>
             </FadeParallax>
           </FadeParallax>
         </div>

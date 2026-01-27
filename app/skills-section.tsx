@@ -11,7 +11,7 @@ export default function SkillsSection() {
         <h2 className="text-2xl font-bold">Skills</h2>
       </FadeParallax>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {skillsData.map((category) => (
           <FadeParallax 
             key={category.title} 

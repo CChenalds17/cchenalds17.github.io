@@ -22,7 +22,7 @@ export const mips: Project =
     "/projects/mips/fsm1.jpg",
     "/projects/mips/fsm2.jpg",
   ],
-  tags: ["SystemVerilog", "FPGA", "Vivado"],
+  tags: ["SystemVerilog", "RTL Design", "FPGA", "FSM Control", "Testbenches", "Vivado"],
   links: {
     github: "https://github.com/CChenalds17/mips"
   }

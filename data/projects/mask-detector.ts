@@ -25,7 +25,7 @@ export const maskDetector: Project =
     {url: "/projects/mask-detector/sprayer.JPG", caption: "Wooden chassis with motor, spray bottle, and webcam"},
     {url: "/projects/mask-detector/Demo-min.gif", caption: "System demo"},
   ],
-  tags: ["Computer Vision", "Arduino"],
+  tags: ["Embedded Systems","Arduino", "Real-Time IO", "Serial Communication"],
   links: {
     github: "https://github.com/cchenalds17/MaskDetector"
   }

@@ -11,34 +11,42 @@ export type SkillCategory = {
 
 export const skillsData: SkillCategory[] = [
   {
-    title: "Software & Programming",
+
+    title: "Digital & Embedded",
     skills: [
+      { name: "FPGA Programming" },
       { name: "SystemVerilog" },
       { name: "Vivado" },
+      { name: "Digital Circuit Design" },
       { name: "Arduino" },
-      { name: "MATLAB" },
-      { name: "LTSpice" },
-      { name: "Python" },
-      { name: "C" },
-      { name: "Git" },
+      { name: "GPIO" },
       { name: "Linux" },
-
-      { name: "OpenCV" },
-      { name: "PyTorch" },
-      { name: "React/TypeScript" },
     ]
   },
   {
-    title: "Hardware",
+    title: "Hardware & Circuits",
     skills: [
-      { name: "FPGA Programming" },
-      { name: "Analog & Digital Circuit Design" },
-      { name: "Embedded Systems" },
-      { name: "Oscilloscope" },
-      { name: "Multimeter" },
-      { name: "Function Generator" },
+      { name: "PCB Design" },
+      { name: "Schematic Capture" },
+      { name: "KiCad" },
+      { name: "LTSpice" },
+      { name: "Analog Circuit Design" },
+      { name: "Op-Amps" },
       { name: "Soldering" },
-      { name: "Hardware Verification" },
+      { name: "Board Bring-Up" },
+      { name: "Oscilloscopes" },
+      { name: "Multimeters" },
+      { name: "Function Generators" },
+      { name: "Power Supplies" },
+    ]
+  },
+  {
+    title: "Programming",
+    skills: [
+      { name: "Python" },
+      { name: "C" },
+      { name: "MATLAB" },
+      { name: "Git" },
     ]
   },
 ];
