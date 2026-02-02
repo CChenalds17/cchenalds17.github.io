@@ -44,12 +44,7 @@ export default function ProjectsContent({ projects }: ProjectsContentProps) {
 
         {/* Desktop */}
         { screenWidth >= 768 && (
-          <FadeParallax
-            direction="up"
-            distance={40}
-            end={95}
-            className="grid grid-cols-3 gap-8"
-          >
+          <div className="grid grid-cols-3 gap-8">
             {projects.map((project) => (
               <motion.div
                 key={project.id}
@@ -118,16 +113,13 @@ export default function ProjectsContent({ projects }: ProjectsContentProps) {
                 </Link>
               </motion.div>
             ))}
-          </FadeParallax>
+          </div>
         )}
 
         {/* Mobile */}
         { screenWidth < 768 && projects.map((project) => (
-          <FadeParallax 
+          <div 
             key={project.id}
-            direction="up" 
-            distance={40} 
-            end={95}
             className="grid grid-cols-1 gap-8"
           >
             <motion.div
@@ -196,7 +188,7 @@ export default function ProjectsContent({ projects }: ProjectsContentProps) {
                 </motion.div>
               </Link>
             </motion.div>
-          </FadeParallax>
+          </div>
         ))}
       </div>
     </main>
