@@ -10,6 +10,19 @@ export default function Experience() {
       <div className="space-y-8">
         <div className="relative">
           <FadeParallax direction="up" distance={80} end={75} className="space-y-2">
+            <h3 className="text-lg font-semibold">Course Staff</h3>
+            <p className="text-muted-foreground">CS1410: Computing Hardware</p>
+            <p className="text-sm text-muted-foreground">2026</p>
+            <FadeParallax direction="up" distance={20} end={75} className="list-disc list-inside text-muted-foreground space-y-1.5 mt-2">
+              <li>Redesigning problem sets covering CMOS transistors, digital logic, FSMs, memory systems, & MIPS processors</li>
+              <li>Reworking assignments to emphasize reasoning about hardware behavior, correctness, & design tradeoffs</li>
+              <li>Developing design- & verification-based questions involving RTL error diagnosis & targeted testbench construction</li>
+            </FadeParallax>
+          </FadeParallax>
+        </div>
+
+        <div className="relative">
+          <FadeParallax direction="up" distance={80} end={75} className="space-y-2">
             <h3 className="text-lg font-semibold">Undergraduate Researcher</h3>
             <p className="text-muted-foreground">Harvard Ability Lab</p>
             <p className="text-sm text-muted-foreground">2025</p>
