@@ -16,5 +16,6 @@ export type Project = {
     github?: string;
     demo?: string;
     paper?: string;
+    presentation?: string;
   };
 }

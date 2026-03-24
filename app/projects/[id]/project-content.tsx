@@ -140,14 +140,37 @@ export default function ProjectContent({ project }: ProjectContentProps) {
               const videoUrl = typeof video === 'string' ? video : video.url;
               const videoCaption = typeof video !== 'string' ? video.caption : undefined;
               
+              // Check if it's a YouTube URL
+              const isYouTube = videoUrl.includes('youtube.com/watch?v=') || videoUrl.includes('youtu.be/');
+              let embedUrl = videoUrl;
+              
+              if (isYouTube) {
+                // Convert YouTube URL to embed format
+                const videoId = videoUrl.includes('youtube.com/watch?v=') 
+                  ? videoUrl.split('v=')[1]?.split('&')[0]
+                  : videoUrl.split('youtu.be/')[1]?.split('?')[0];
+                embedUrl = `https://www.youtube.com/embed/${videoId}`;
+              }
+              
               return (
                 <div key={index} className="space-y-2">
                   <div className="relative aspect-video w-full overflow-hidden rounded-sm">
-                    <video
-                      controls
-                      className="w-full h-full"
-                      src={videoUrl}
-                    />
+                    {isYouTube ? (
+                      <iframe
+                        src={embedUrl}
+                        className="w-full h-full"
+                        allowFullScreen
+                        title={videoCaption || `Video ${index + 1}`}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      />
+                    ) : (
+                      <video
+                        controls
+                        className="w-full h-full"
+                        src={videoUrl}
+                      />
+                    )}
                   </div>
                   {videoCaption && (
                     <p className="text-sm text-muted-foreground text-center italic">{videoCaption}</p>
@@ -155,6 +178,21 @@ export default function ProjectContent({ project }: ProjectContentProps) {
                 </div>
               );
             })}
+          </FadeParallax>
+        )}
+        
+        {/* Embedded Presentation */}
+        {project.links?.presentation && (
+          <FadeParallax direction="up" distance={20} end={90} className="space-y-6">
+            <h2 className="text-2xl font-semibold">Presentation</h2>
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src={project.links.presentation.replace('/edit?usp=sharing', '/embed').replace('/edit?slide=', '/embed') + '?present=1'}
+                className="absolute top-0 left-0 w-full h-full rounded-sm border border-gray-200 dark:border-gray-700"
+                allowFullScreen
+                title="Presentation"
+              />
+            </div>
           </FadeParallax>
         )}
       </div>
