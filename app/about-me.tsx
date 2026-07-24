@@ -15,7 +15,7 @@ export default function AboutMe() {
           </p>
           <br />
           <p>
-            I'm currently interning at General Dynamics Applied Physical Sciences, where I'm expanding an underwater communication system to support two additional ~10kHz bands.
+            I&apos;m currently interning at General Dynamics Applied Physical Sciences, where I'm expanding an underwater communication system to support two additional ~10kHz bands.
             Most of my time is currently spent designing PCBs in Altium and running simulations in LTspice.
           </p>
           <br />
