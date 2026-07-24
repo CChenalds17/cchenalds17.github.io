@@ -1,26 +1,31 @@
 import { Project } from "@/types/project";
 
-export const vlaRobotArm: Project = 
-{
+export const vlaRobotArm: Project = {
   id: "vla-robot-arm",
-  title: "VLA Robot Arm",
-  shortDescription: "Conducted human-in-the-loop experiments to evaluate the performance of the vision-language-action (VLA) models on \
-    activities of daily living tasks involving human interaction.",
-  description: 
-  `
-    Collaborators: Patrick Slade (Principal Investigator), Alex Ko (Co-Intern)
+  title: "Wearable VLA Robotic Arm for Assistive Tasks",
+  shortDescription: "A wearable supernumerary robotic arm platform evaluating Vision-Language-Action (VLA) models on human-in-the-loop assistive tasks.",
+  description: `
+Collaborators: Dr. Patrick Slade (PI), Alex Ko
 
-    Conducted human-in-the-loop experiments to evaluate the performance of the vision-language-action (VLA) models on \
-    activities of daily living tasks involving human interaction.
+Developed a wearable supernumerary robotic arm platform to evaluate Vision-Language-Action (VLA) models on Activities of Daily Living (ADL) tasks requiring \
+direct human interaction.
 
-    We adapted the open-source LeRobot SO-101 Arm with SmolVLA with a wearable human-mounted harness, adding hard-stops to ensure user safety. \
-    We also collected 10,000+ frames of egocentric training data, which we used to fine-tune the SmolVLA model to our specific tasks, \
-    and designed experimental task protocols with varying levels of complexity & human motion to measure VLA performance under realistic conditions.
+Hardware Adaptation & Safety
+- Wearable Harness Integration: Adapted an open-source LeRobot SO-101 arm onto a body-mounted harness to function as a wearable assistant.
+- Mechanical Hard-Stops: Integrated physical range-of-motion limits on the arm to guarantee user safety during real-time model inference near the human body.
+- 1-DOF Proof of Concept: Built an initial 1-DOF prototype with custom Arduino motor control firmware to validate the teleoperation, recording, \
+and inference pipeline before scaling to multi-DOF manipulation.
 
-    As a proof of concept, we began by implementing a custom 1-DOF robotic arm based on the SmolVLA architecture with the Meta Project Aria Gen 1 Glasses as our vision system. \
-    I developed a custom camera handler to undistort, crop, and stream video into the SmolVLA recording/inference pipeline, wrote custom firmware for the \
-    Arduino Uno to control the arm, and implemented a teleoperation recorder to log camera frames, servo angles, and tasks to curate labeled dataset for model fine-tuning.
+Egocentric Vision & Data Pipeline
+- Smart Glasses Integration: Interfaced Meta Project Aria Gen 1 smart glasses as the primary vision sensor, writing a Python camera handler to undistort, \
+crop, and stream egocentric video into the SmolVLA pipeline.
+- Teleoperation & Dataset Curation: Built a synchronized data recorder logging camera frames, joint telemetry, and natural language prompts, curating a dataset \
+of 10,000+ labeled egocentric frames.
 
+Model Fine-Tuning & Evaluation
+- SmolVLA Fine-Tuning: Fine-tuned the SmolVLA model on the custom egocentric dataset for target assistive tasks (e.g., grasping glasses and handing them to the user).
+- Experimental Protocols: Designed human-in-the-loop evaluation protocols with varying levels of task complexity and human motion to quantify model reliability \
+under realistic operating conditions.
   `,
   coverImage: "/projects/vla-robot-arm/cover.png",
   videos: [
@@ -33,9 +38,9 @@ export const vlaRobotArm: Project =
       caption: "(Proof of Concept) Task: Point to the glasses"
     }
   ],
-  tags: ["VLAs", "Embedded Systems", "Robotics", "Computer Vision"],
+  tags: ["VLAs", "Embedded Systems", "Robotics", "Computer Vision", "Python"],
   links: {
     github: "https://github.com/cchenalds17/vla-robot-arm",
     presentation: "https://docs.google.com/presentation/d/1zMrlxHVBTFBUcfUni9LxR7q94Z8kBFBncPyytkM-ByY/edit?usp=sharing"
   }
-}
+};

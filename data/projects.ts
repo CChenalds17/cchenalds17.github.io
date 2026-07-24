@@ -9,15 +9,17 @@ import { personalWebsite } from "./projects/personal-website";
 import { rtiow } from "./projects/rtiow";
 import { mips } from "./projects/mips";
 import { logicDemo } from "./projects/logic-demo";
+import { diffAmp } from "./projects/diff-amp";
 
 export const projects: Project[] = [
+  diffAmp,
+  reverbKaraokeMachine,
   logicDemo,
   mips,
-  reverbKaraokeMachine,
-  maskDetector,
   vlaRobotArm,
   rtiow,
-  clientServerChatApp,
-  alu32, 
-  personalWebsite
+  maskDetector,
+  // clientServerChatApp,
+  // alu32, 
+  // personalWebsite
 ];

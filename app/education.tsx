@@ -20,18 +20,19 @@ export default function Education() {
 
         <div className="relative">
           <FadeParallax direction="up" distance={80} end={75} className="space-y-2">
+            <h4 className="text-md font-semibold">MIT Cross-Registration</h4>
+            <FadeParallax direction="up" distance={0} end={75} className="list-disc list-inside text-muted-foreground space-y-1.5">
+              <li>Solid-State Circuits</li>
+              <li>Semiconductor Electronic Circuits</li>
+              <li>Intro to Machine Learning</li>
             <h4 className="text-md font-semibold">Relevant Coursework</h4>
-            <FadeParallax direction="up" distance={20} end={75} className="list-disc list-inside text-muted-foreground space-y-1.5">
-              <li>Semiconductor Electronic Circuits (MIT)</li>
-              <li>Computing Hardware</li>
               <li>Circuits, Devices, and Transduction</li>
               <li>Signals & Communications</li>
+              <li>Computing Hardware</li>
               <li>Systems and Control</li>
               <li>Physics Electromagnetism</li>
               <li>Systems Programming</li>
               <li>Data Structures and Algorithms</li>
-              <li>Intro to Machine Learning (MIT)</li>
-              <li>Intro to Distributed Computing</li>
             </FadeParallax>
           </FadeParallax>
         </div>

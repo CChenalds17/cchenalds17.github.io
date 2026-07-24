@@ -11,33 +11,33 @@ export type SkillCategory = {
 
 export const skillsData: SkillCategory[] = [
   {
-
-    title: "Digital & Embedded",
+    title: "EDA & Design Tools",
     skills: [
-      { name: "FPGA Programming" },
-      { name: "SystemVerilog" },
-      { name: "Vivado" },
-      { name: "Digital Circuit Design" },
-      { name: "Arduino" },
-      { name: "GPIO" },
-      { name: "Linux" },
+      { name: "Altium Designer" },
+      { name: "LTspice" },
+      { name: "Cadence Virtuoso" },
+      { name: "Spectre" },
+      { name: "KiCad" },
     ]
   },
   {
-    title: "Hardware & Circuits",
+    title: "Lab & Test",
     skills: [
-      { name: "PCB Design" },
-      { name: "Schematic Capture" },
-      { name: "KiCad" },
-      { name: "LTSpice" },
-      { name: "Analog Circuit Design" },
-      { name: "Op-Amps" },
+      { name: "Oscilloscopes" },
+      { name: "Function Generators" },
+      { name: "Spectrum Analyzers" },
+      { name: "Power Supplies" },
+      { name: "Multimeters" },
       { name: "Soldering" },
       { name: "Board Bring-Up" },
-      { name: "Oscilloscopes" },
-      { name: "Multimeters" },
-      { name: "Function Generators" },
-      { name: "Power Supplies" },
+    ]
+  },
+  {
+    title: "HDL & Digital",
+    skills: [
+      { name: "SystemVerilog" },
+      { name: "Xilinx Vivado" },
+      { name: "FPGA" },
     ]
   },
   {

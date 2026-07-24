@@ -1,35 +1,35 @@
 import { Project } from "@/types/project";
 
-export const reverbKaraokeMachine: Project = 
-{
+export const reverbKaraokeMachine: Project = {
   id: "reverb-karaoke-machine",
   title: "Reverb Karaoke Machine",
-  shortDescription: "A karaoke machine that adds compression and reverb to the audio of the singer.",
-  description: 
-  `
-  Created a karaoke machine that adds compression and reverb to the singer's voice. \
-  Built from scratch using Arduino, analog circuitry, and digital signal processing, \
-  the project combined electrical engineering and embedded software design to produce real-time audio effects.
+  shortDescription: "A mixed-signal real-time audio effects processor featuring custom analog active filtering, discrete 10-bit converters, and MCU-based DSP.",
+  description: `
+Built a mixed-signal audio processing system from scratch, handling everything from microphone input conditioning to speaker output.
 
-  Key Features:
-  - Real-time audio input from a microphone filtered through custom analog circuits (50 Hz - 1.2 kHz range)
-  - Digital signal processing on Arduino using a modified YIN frequency estimation algorithm for autotune (later replaced with reverb + compression due to hardware limits)
-  - Custom-built 10-bit DAC (R-2R ladder) for smooth audio playback through a speaker with adjustable volume
-  
-  Engineering Challenges:
-  - Designing stable high-pass and low-pass filters for human vocal frequencies
-  - Creating a biasing and amplification circuit for readable mic input
-  - Overcoming Arduino's processing limitations in real-time autotuning
-  - Debugging a 10-bit DAC with over 20 soldered resistors and multiple rework
+Analog Front-End:
+Designed the input signal chain starting with a low-noise op-amp pre-amp stage to bias and amplify weak electret microphone signals \
+into a single-supply MCU-readable range. Added bandpass filter stage to reject background hum and high-frequency noise while satisfying Nyquist \
+criteria before sampling.
+
+Custom Converters:
+Instead of using the MCU's built-in ADC/DAC, I built discrete converters to evaluate their performance. \
+Implemented a 10-bit R-2R resistor ladder DAC and tested a SAR ADC topology. Added output reconstruction filtering \
+after the DAC to smooth quantization steps and eliminate high-frequency images.
+
+Bring-Up & Debugging:
+Used an oscilloscope to debug clipping, ground bounce, and other sources of noise across all stages.
   `,
-  coverImage: {url: "/projects/reverb-karaoke-machine/cover.png", caption: "Circutry inside our custom-printed microphone-shaped casing."},
+  coverImage: {
+    url: "/projects/reverb-karaoke-machine/cover.png",
+    caption: "Circuitry inside custom-printed microphone casing.",
+  },
   images: [
-    {url: "/projects/reverb-karaoke-machine/block-diagram.png", caption: "Block diagram of system"},
-    {url: "/projects/reverb-karaoke-machine/schematic.png", caption: "Multi-stage filter schematic"},
-    {url: "/projects/reverb-karaoke-machine/breadboard.JPG", caption: "Testing breadboard setup"},
-    {url: "/projects/reverb-karaoke-machine/scope.gif", caption: "Oscilloscope input and amplified output"},
-    {url: "/projects/reverb-karaoke-machine/filters.png", caption: "Input filters"},
-    {url: "/projects/reverb-karaoke-machine/dac-output.png", caption: "Close-up of the Arduino DAC output."},
+    { url: "/projects/reverb-karaoke-machine/block-diagram.png", caption: "Block diagram of system" },
+    { url: "/projects/reverb-karaoke-machine/schematic.png", caption: "Multi-stage filter schematic" },
+    { url: "/projects/reverb-karaoke-machine/breadboard.JPG", caption: "Breadboard bring-up and converter hardware testing." },
+    { url: "/projects/reverb-karaoke-machine/scope.gif", caption: "Oscilloscope capture: Raw mic input vs. amplified & filtered output." },
+    { url: "/projects/reverb-karaoke-machine/dac-output.png", caption: "Close-up of the Arduino DAC output." },
   ],
-  tags: ["Analog Signal Conditioning", "Op-Amps", "Filters", "ADC/DAC"],
-}
+  tags: ["Mixed-Signal Design", "Analog Signal Conditioning", "Op-Amps & Active Filters", "ADC", "DAC"],
+};
