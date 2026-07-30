@@ -17,6 +17,7 @@ export default function Experience() {
               <li>Expanded underwater acoustic communication system to support 2 additional ~10kHz differential bands at ~5kV / 5A</li>
               <li>Routed amplifier outputs to frequency-appropriate magnetics & hydrophones via opto-isolated control signals</li>
               <li>Owned schematic capture, layout, library, & DRC across 3 PCB versions (4-layer, 2×4”) with varying switching topologies</li>
+              <li>Collaborated with mechanical team to adjust layout & mounting configurations to meet spatial & thermal constraints</li>
               <li>Designed hydrophone-test board with an overcurrent latching-protection circuit utilizing comparator hysteresis</li>
             </FadeParallax>
           </FadeParallax>
