@@ -41,6 +41,7 @@ export default function Experience() {
             <p className="text-sm text-muted-foreground">Summer – Fall 2025</p>
             <FadeParallax direction="up" distance={20} end={75} className="list-disc list-inside text-muted-foreground space-y-1.5 mt-2">
               <li>Prototyped wearable mounting & data recording system to collect 10,000+ frames for supernumerary-arm VLA study</li>
+              <li>Coded custom firmware & camera handler to process & stream video into teleoperation, recording, & inference pipelines</li>
             </FadeParallax>
           </FadeParallax>
         </div>
