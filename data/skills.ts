@@ -47,6 +47,7 @@ export const skillsData: SkillCategory[] = [
       { name: "C" },
       { name: "MATLAB" },
       { name: "Git" },
+      { name: "Linux" },
     ]
   },
 ];
